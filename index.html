@@ -13,9 +13,211 @@
 <body>
 <!-- BEGIN  out-->
 <div class="out">
+	<!-- begin header  -->
+	<header class="header">
+		<div class="header__top">
+			<div class="inner">
+				<nav class="nav">
+					<button class="nav__btn js-nav-btn"><span></span></button>
+					<ul class="js-nav">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Career</a></li>
+						<li><a href="#">Contacts</a></li>
+					</ul>
+				</nav>
+				<div class="lang">
+					<div class="select js-select">
+						<span class="select__text js-select-text">English<i></i></span>
+						<ul class="select__list js-select-list">
+							<li data-val="Українська">Українська</li>
+							<li data-val="English">English</li>
+							<li data-val="Русский">Русский</li>
+						</ul>
+						<select>
+							<option value="Українська">Українська</option>
+							<option value="English">English</option>
+							<option value="Русский">Русский</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="inner">
+				<a href="#" class="logo">
+					<img src="img/logo.png" alt="">
+					<div>
+						<i></i>						
+						<span>Bringing global resources to the farmer</span>
+					</div>
+				</a>
+				<div class="menu">
+					<ul>
+						<li><a href="#">Ourbusiness</a></li>
+						<li><a href="#">BusinessLines</a></li>
+						<li><a href="#">APGroupcompanies</a></li>
+						<li><a href="#">Sustainability</a></li>
+					</ul>					
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
 
+	<!-- begin main  -->
+	<main class="main">
+		<div class="inner">
+			<aside class="contacts">
+				<div class="contacts__title">hr departament</div>
+				<p>Do you have questions about employment? Contact us.</p>
+				<span>(044) 498-22-40</span>
+				<a href="#">recruiting@apgroup.com</a>
+			</aside>
+			<div class="container">
+				<h2>Career</h2>
+				<p>Шановні учасники!</p>
+				<p>Для участі в програмі «Лідер агробізнесу» будь ласка заповніть анкету та пройдіть тестування.</p>
+				<p>При заповненні Ваші відповіді зберігаються автоматично після натиснення кнопки "Далі", тому анкету та тест можна заповнювати в кілька етапів. Всі поля в анкеті мають бути заповнені.</p>
+				<p>Дякуємо Вам за участь в конкурсі!</p>
+				<p>Команда Agroprosperis</p>
+				<div class="block">
+					<div class="enter">
+						<span>Якщо ви раніше заповнювали анкету, Вам необхідно авторизуватись.</span>
+						<button class="btn js-popup-btn">Увійти</button>
+					</div>
+					<div class="form js-form">
+						<form action="" class="js-validate">
+							<div class="field">
+								<label>
+									<span class="label">ПІБ (повністю): </span>
+									<input type="text" class="input" data-validation="required">
+								</label>
+							</div>
+							<div class="field">
+								<span class="label">Стать : </span>
+								<div>
+									<label class="radio-wrap">
+										<input type="radio" class="radio" name="radio1" data-validation="required">
+										<span>Чол.</span> 
+									</label>
+								</div>
+								<div>
+									<label class="radio-wrap">
+										<input type="radio" class="radio" name="radio1" data-validation="required">
+										<span>Жін.</span>
+									</label>
+								</div>								
+							</div>
+							<div class="field">
+								<label>
+									<span class="label">Ваше фото: </span>
+									<input type="file" class="file" data-validation="required" name="img" accept="image/jpeg,image/png,image/gif">
+								</label>
+							</div>
+							<div class="field">
+								<label>
+									<span class="label">Дата народження: </span>
+									<input type="date" class="input" data-validation="date" data-validation-format="yyyy-mm-dd">
+								</label>
+							</div>
+							<div class="field">
+								<label>
+									<span class="label">Місце фактичного проживання:</span>
+									<input type="text" class="input" data-validation="required">
+								</label>
+							</div>
+							<div class="field">
+								<label>
+									<span class="label">Номер моб. телефону:</span>
+									<input type="tel" class="input" data-validation="length alphanumeric" data-validation-length="min10">
+								</label>
+							</div>
+							<div class="field">
+								<label>
+									<span class="label">Адреса електронної пошти:</span>
+									<input type="email" class="input" data-validation="email">
+								</label>
+							</div>
+							<div class="field">
+								<label>
+									<span class="label">Пароль:</span>
+									<input type="password" class="input" data-validation="required">
+								</label>
+							</div>
+							<span class="label">Необхідний для подальшої авторизації і редагування анкети</span>
+							<div class="field field_btn">
+								<div class="form__tooltip js-tooltip">
+									<i class="js-tooltip__close"></i>
+									<span>Для продовження Вам необхідно заповнити всі поля в анкеті</span>
+								</div>
+								<button class="btn" type="submit">Далі</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- end main -->
+	
 </div>
 <!-- END out-->
+
+<!-- begin footer  -->
+<footer class="footer">
+	<div class="footer__bg">			
+		<div class="inner">
+			<div class="footer__nav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Career</a></li>
+					<li><a href="#">Contacts</a></li>
+				</ul>
+			</div>
+			<div class="footer__copy">
+				<p>© 2014 AgroProsperis, Inc. All Rights Reserved.</p>
+				<span>developed by GoInteractive</span>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- end footer -->
+
+<!-- begin wrap  -->
+<div class="wrap js-popup">
+	<div class="popup">
+		<div class="popup__top">
+			<i class="popup__close js-popup-close"></i>
+			<span class="popup__title">Авторизація</span>
+		</div>
+		<div class="popup__body">
+			<div class="form js-form-login">
+				<form action="" class="js-validate">
+					<div class="field">
+						<label>
+							<span class="label">Адреса електронної пошти</span>
+							<input type="email" class="input" data-validation="email">
+						</label>
+					</div>
+					<div class="field">
+						<a href="#">Нагадати пароль</a>
+						<label>
+							<span class="label">Пароль</span>
+							<input type="password" class="input" data-validation="required">
+						</label>
+					</div>
+					<div class="field field_btn">
+						<button class="btn" type="submit">Увійти</button>
+					</div>
+				</form>
+			</div>			
+		</div>		
+	</div>
+</div>
+<!-- end wrap -->
+
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>

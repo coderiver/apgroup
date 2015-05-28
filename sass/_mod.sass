@@ -1,0 +1,205 @@
+.select
+	position: relative
+	cursor: pointer
+	+reg
+	font-size: 12px
+	text-align: left
+	select
+		opacity: 0
+		position: absolute
+		top: 0
+		left: 0
+		visibility: hidden
+	&.is-active
+		.select__text
+			+border-radius(3px 3px 0 0)
+	&__text
+		position: relative
+		display: block
+		padding: 0 30px 0 10px 
+		height: 28px
+		min-width: 51px 
+		line-height: 28px
+		background: #F9F9FA
+		border: 1px solid #C4C9D5
+		+border-radius(3px)
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		z-index: 2 
+		&:before, &:after
+			content: "" 
+			position: absolute
+		&:before
+			width: 15px
+			height: 15px
+			+border-radius(3px)
+			background: #121560
+			top: 7px
+			right: 5px
+		&:after
+			top: 13px
+			right: 9px
+			+arr(7, 4, #fff, b)
+	&__list
+		position: absolute
+		display: none
+		left: 0
+		right: 0
+		top: 100%
+		z-index: 100
+		max-height: 200px
+		overflow-x: hidden
+		overflow-y: auto
+		background: #F9F9FA
+		border: 1px solid #C4C9D5
+		border-top: none
+		+border-radius(0 0 3px 3px)
+		li
+			padding: 5px 11px 
+			cursor: pointer
+			line-height: 1
+			&:hover
+				background: #121560
+				color: #fff
+.in-select
+	position: relative
+	cursor: pointer
+	font-size: 15px
+	+reg
+	text-align: left
+	width: 100%
+	max-width: 340px
+	select
+		opacity: 0
+		position: absolute
+		top: 0
+		left: 0
+		visibility: hidden
+	&__text
+		position: relative
+		display: block
+		padding: 0 30px 0 10px 
+		height: 45px
+		line-height: 45px
+		background: #fbfcfd
+		border-left: 5px solid #bbc5d2
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		z-index: 2 
+		+box
+		&:after
+			content: "" 
+			position: absolute
+			top: 21px
+			right: 10px
+			+arr(10, 6, #333333, b)
+	&__list
+		position: absolute
+		display: none
+		left: 0
+		right: 0
+		top: 100%
+		z-index: 100
+		max-height: 200px
+		overflow-x: hidden
+		overflow-y: auto
+		background: #fbfcfd
+		border: 1px solid #C4C9D5
+		li
+			padding: 5px 10px 5px 15px
+			cursor: pointer
+			line-height: 1
+			&:hover
+				background: #121560
+				color: #fff 
+
+.btn
+	display: inline-block
+	vertical-align: top
+	+bold
+	font-size: 13px
+	color: #fff
+	text-transform: uppercase
+	text-align: center
+	min-width: 140px
+	padding: 11px 25px
+	+border-radius(3px)
+	background: #8DC63F
+	+box-shadow(inset 0 -3px 0 rgba(27, 51, 58, 0.15))
+	position: relative
+	&:hover
+		background: lighten(#8DC63F, 5%) 
+	&:active
+		background: darken(#8DC63F, 5%) 
+		top: 1px
+	&_big
+		width: 100%
+		max-width: 320px
+		padding: 11px 
+	// &_med
+	// 	width: 100%
+	// 	max-width: 230px 
+.label
+	+reg
+	font-size: 13px
+	color: #666
+	display: block
+	margin-bottom: 4px
+.input, .textarea
+	+reg
+	font-size: 15px
+	color: #000
+	padding: 12px 10px 13px
+	background: #fbfcfd
+	width: 100%
+	+box   
+	border: none
+	border-left: 5px solid #bbc5d2 
+	+transition(all 0.3s)
+	&.error
+		border-left-color: #ff0000 
+.textarea
+	resize: none
+	height: 70px
+.input
+	height: 45px
+.radio-wrap
+	+clr
+	display: inline-block
+	font-size: 0
+	padding: 5px 3px 
+	span
+		+reg
+		font-size: 13px
+		color: #000
+		display: block
+		overflow: hidden
+	input
+		margin: 3px 5px 0
+		float: left
+.checkbox-wrap
+	+clr
+	display: inline-block
+	font-size: 0
+	padding: 5px 3px 
+	position: relative
+	span
+		+reg
+		font-size: 13px
+		color: #000
+		display: block
+		overflow: hidden
+	input
+		float: left
+		margin: 3px 5px 0
+.file
+	+reg
+	font-size: 13px
+	color: #666 
+	line-height: 17px
+	&.error
+		color: #ff0000 
+.help-block
+	display: none !important

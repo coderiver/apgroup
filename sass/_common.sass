@@ -47,120 +47,76 @@
 // p
 // 	+jpg(bla)
 
+// width
+=r1
+	@media only screen and (max-width: 980px)
+		@content
+=r2
+	@media only screen and (max-width: 650px)
+		@content
+=r3
+	@media only screen and (max-width: 450px)
+		@content
 
+html, body
+	height: 100%
+.out
+	min-height: 100%
+	margin: 0 0 -87px
+	+r1
+		margin: 0
+	&:after
+		display: block
+		content: "" 
+		height: 87px
+		+r1
+			display: none
 body
 	font-family: Arial, sans-serif 
 	font-size: 12px 
 	line-height: 1.4
-
-
-// common blocks      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	background: #EDEFF2
+
+// fonts
+
++font("NotoSerif Bold", notoserif-bold)
++font("NotoSerif BoldItalic", notoserif-bolditalic)
++font("NotoSerif Italic", notoserif-italic)
++font("NotoSerif Regular", notoserif-regular)
+
+=bold
+	font-family: "NotoSerif Bold", Arial, sans-serif
+=bitalic
+	font-family: "NotoSerif BoldItalic", Arial, sans-serif
+=italic
+	font-family: "NotoSerif Italic", Arial, sans-serif
+=reg
+	font-family: "NotoSerif Regular", Arial, sans-serif
+	
+h1, h2, h3, h4, h5, h6, strong, b
+	font-weight: normal
+a
+	text-decoration: none
+
+h2
+	+bold
+	font-size: 30px
+	line-height: 1
+
+h3
+	+bold
+	font-size: 18px
+	line-height: 1.5 
+h4
+	+bold
+	font-size: 16px
+	line-height: 1.5 
+h5
+	+bold
+	font-size: 15px
+	line-height: 1.5 
+
+p
+	+reg
+	font-size: 15px
+	line-height: 1.5
