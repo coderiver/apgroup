@@ -114,32 +114,57 @@ head.ready(function() {
 		});
 
 	 };
-	 $('.js-tooltip__close').on('click', function() {
-			$('.js-form form').removeClass('is-error');
-	 });
+	$('.js-tooltip__close').on('click', function() {
+		$('.js-form form').removeClass('is-error');
+	});
 
-	 //photo
-	 $('.js-photo').each(function() {
-	 	$('.js-photo-checkbox').on('click', function() {
-	 		if ($('.js-photo-checkbox:checked').length > 0) {
-	 			$('.js-photo-file').addClass('is-active');
-	 		}
-	 		else {
-	 			$('.js-photo-file').removeClass('is-active');
-	 		}
-	 	});
-	 	
-	 });
-	 //region
-	 $('.js-region').each(function() {
-	 	$('.js-region').on('change', function() {
-	 		if ($('.js-region-radio:checked').length > 0) {
-	 			$(this).find('.js-region-box').addClass('is-active');
-	 		}
-	 		else {
-	 			$(this).find('.js-region-box').removeClass('is-active');
-	 		}
-	 	});
-	 	
-	 });
+	//photo
+	$('.js-photo').each(function() {
+		$('.js-photo-checkbox').on('click', function() {
+			if ($('.js-photo-checkbox:checked').length > 0) {
+				$('.js-photo-file').addClass('is-active');
+			}
+			else {
+				$('.js-photo-file').removeClass('is-active');
+			}
+		});
+		
+	});
+	//region
+	$('.js-region').each(function() {
+		$('.js-region').on('change', function() {
+			if ($('.js-region-radio:checked').length > 0) {
+				$(this).find('.js-region-box').addClass('is-active');
+			}
+			else {
+				$(this).find('.js-region-box').removeClass('is-active');
+			}
+		});
+		
+	});
+
+	//graph
+	$('.js-graph-line').each(function() {
+		$(this).width($(this).parents('.js-graph').find('.is-percent').text() + '%');
+	});
+	$('.js-graph-line').each(function() {
+		$(this).width($(this).parents('.js-graph').find('.is-quantity').text() + '%');
+	});
+	//tabs
+	$(".js-tabs-btn").click(function () {
+
+		$('.js-tabs-btn').removeClass('is-active');
+		$(this).addClass('is-active');
+
+		var id = $(this).data("btn"),
+		$item = $('.js-tabs-block');
+
+		var $currItem = $('.js-tabs-block[data-block=' + id + ']');
+
+		$('.js-tabs-block[data-block=' + id + ']').addClass('is-active');
+		$item.not($currItem).removeClass('is-active');
+
+		return false;
+
+	});
 });

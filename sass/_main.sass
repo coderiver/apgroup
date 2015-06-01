@@ -576,3 +576,499 @@
 		+opacity(0.7)
 	p
 		margin: 0
+		
+//testing
+.logo-small
+	font-size: 0
+	float: left
+	img
+		width: 144px
+		display: inline-block
+		vertical-align: bottom
+		margin-right: 8px
+	span
+		+reg
+		font-size: 18px
+		color: #231F20
+		display: inline-block
+		vertical-align: bottom
+		line-height: 1.3
+
+.back
+	padding: 12px 0 11px
+	float: right
+	+r2
+		float: none
+		display: block
+		clear: both
+		padding: 12px 0 0 
+	a
+		color: #121560
+		+reg
+		font-size: 12px
+		text-transform: uppercase
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+			
+.sidebar
+	float: left
+	width: 220px
+	margin: 0 20px 0 0 
+	+r1
+		float: none
+		width: 100%
+		margin: 0
+	&__links
+		padding: 30px 0 0 
+		li
+			padding: 10px 0 0 
+		a
+			position: relative
+			padding: 0 0 0 14px
+			+reg
+			font-size: 14px
+			color: #121560
+			text-decoration: underline
+			display: inline-block
+			&:hover
+				text-decoration: none
+			&.is-active
+				text-decoration: none
+				color: #333
+			&:before
+				position: absolute
+				top: 50%
+				left: 0
+				margin-top: -3px
+				+arr(7, 7, #8dc63f, br)
+				content: "" 
+				
+.content
+	&__inner
+		overflow: auto
+		background: #fff 
+	&__table
+		width: 700px
+	&__filter
+		&:after
+			content: "" 
+			display: block
+			float: left
+			width: 100%
+		h4
+			display: inline-block
+			vertical-align: top
+			padding: 3px 10px 3px 0 
+		div
+			&.is-left
+				float: left
+				font-size: 0
+				padding: 22px 0 10px 
+				+r2
+					float: none
+			&.is-right
+				float: right
+				font-size: 0
+				padding: 0 0 10px 
+				+r2
+					float: none
+	&__top
+		&:after
+			content: "" 
+			display: block
+			float: left
+			width: 100%
+	&__date
+		display: inline-block
+		vertical-align: top
+		padding: 0 17px
+		position: relative
+		+r2
+			padding: 0 17px 0 0
+			margin: 0 17px 0 0  
+		i
+			position: absolute
+			bottom: 7px
+			right: 0
+			font-size: 12px
+			color: #666
+			line-height: 15px 
+	&__bottom
+		+clr
+		padding: 23px 15px 
+		&.is-mob
+			text-align: center
+			p
+				+r3
+					float: none
+			.content__pages
+				+r3
+					float: none
+					padding: 10px 0 0 
+		p
+			+reg
+			font-size: 13px
+			line-height: 15px
+			padding: 4px 0 
+			color: #666
+			float: left 
+			margin: 0
+			b
+				+bold
+	&__pages
+		float: right
+		font-size: 0
+		li
+			display: inline-block
+			vertical-align: top
+		a
+			+reg
+			font-size: 13px
+			line-height: 24px
+			width: 24px
+			display: block
+			text-align: center
+			+border-radius(3px)
+			color: #121560
+			text-decoration: underline
+			&:hover
+				text-decoration: none		
+			&.is-dots
+				text-decoration: none	
+			&.is-active
+				color: #666
+				background: #E9ECEF
+				text-decoration: none
+.table
+	border-spacing: 0
+	border-collapse: collapse
+	td
+		border-bottom: 1px solid #c7cfd6
+		border-right: 1px solid #c7cfd6
+		vertical-align: top
+		padding: 13px 0
+		&.is-last
+			border-right: none
+	&__col
+		width: 59px
+		text-align: center 
+		+reg
+		font-size: 15px
+		line-height: 15px
+		&.is-last
+			+bold
+	&__number
+		+reg
+		font-size: 13px
+		text-align: center 
+		line-height: 15px
+	&__name
+		width: 279px
+		text-align: left
+		a
+			+reg
+			font-size: 13px
+			color: #121560
+			text-decoration: underline
+			display: inline-block
+			margin: 0 15px 
+			line-height: 15px
+			&:hover
+				text-decoration: none
+.report
+	b
+		+bold
+	&__number,
+	&__name,
+	&__col
+		border: 1px solid #c7cfd6
+	&__heading
+		height: 200px
+		position: relative 
+		+clr
+		border-bottom: 2px solid #c7cfd6 
+		div
+			+reg
+			font-size: 13px
+			line-height: 15px
+			color: #000 
+			+box 
+	&__col
+		width: 200px
+		span
+			display: block
+			white-space: nowrap
+	&__name
+		width: 280px
+		display: block
+		border-top: none
+		border-right: none		
+		padding: 22px 
+		height: 200px
+		float: left
+		position: relative
+		span
+			position: absolute
+			bottom: 22px
+			left: 15px
+			right: 15px
+	&__number
+		height: 200px
+		float: left
+		width: 60px	
+		border-top: none
+		border-left: none
+		border-right: none
+		position: relative
+		span
+			position: absolute
+			bottom: 22px
+			left: 15px
+			right: 15px
+	&__cols
+		width: 200px
+		+rotate(-90)
+		position: relative
+		position: absolute
+		right: 80px
+		top: -80px
+	&__col
+		padding: 22px 
+		border-bottom: none
+		border-right: none
+
+.user-info
+	float: left
+	padding: 2px 0 1px
+	p
+		font-size: 13px
+		b
+			+bold
+.user-date
+	padding: 25px 19px 
+	b
+		+bold
+	ul
+		padding: 0 7px 
+	li
+		+reg
+		font-size: 13px
+		position: relative
+		&:before
+			content: "-" 
+			margin: 0 6px 0 0 
+.user-table
+	margin-bottom: 25px
+	width: 700px
+	td, th
+		padding: 7px 19px 
+		text-align: left
+		+reg
+		font-size: 15px
+		line-height: 20px
+		border-right: 1px solid #c7cfd6
+		&.is-name
+			width: 262px
+		&.is-percent
+			width: 20px
+		&.is-graph
+			border-right: none
+			padding: 9px 30px 9px 10px
+		&.is-quantity
+			padding: 7px 0
+			text-align: center
+			width: 80px 
+	th
+		border: none
+		border-bottom: 3px solid #c7cfd6 
+		font-weight: normal
+	td
+		border-top: 1px solid #c7cfd6
+		vertical-align: middle
+		position: relative
+		&.is-graph
+			border-top: none
+			padding: 0 30px 1px 10px
+			font-size: 0
+			overflow: hidden
+			div
+				position: relative
+				div
+					height: 20px
+					width: 0
+					background: #2976b2 
+					position: absolute
+					top: 10px
+					bottom: 10px
+					left: 0
+			i
+				&.is-border
+					height: 40px
+					width: 20%
+					+box
+					border-left: 1px dotted #e5e5e5
+					display: inline-block
+					vertical-align: top
+					position: relative
+					&:before, &:after
+						content: "" 
+						position: absolute
+						top: 0
+						bottom: 0
+						left: 50%
+						border-left: 1px dotted #e5e5e5
+					&:after
+						left: 100%
+	&__footer
+		td
+			border: none
+			border-top: 1px solid #c7cfd6 
+			&.is-graph
+				border-top: 1px solid #c7cfd6 
+				font-size: 0				
+				padding: 9px 30px 9px 10px
+				span
+					width: 10%
+					display: inline-block
+					vertical-align: top
+					font-size: 11px
+					color: #666 
+					line-height: 20px
+					position: relative 
+					text-align: right
+					i
+						font-style: normal
+						+translateX(50%)
+						display: inline-block
+						position: relative
+						&:before
+							position: absolute
+							bottom: 100%
+							left: 50%
+							border-right: 1px solid #cccccc
+							height: 5px
+							content: ""  
+							margin-bottom: -2px
+.tabs
+	float: right
+	font-size: 0
+	+r(650)
+		float: none
+		clear: both
+		padding: 10px 0 0 
+	li
+		display: inline-block
+		vertical-align: top
+		+r(650)
+			display: block
+		a
+			display: inline-block
+			+reg
+			font-size: 13px
+			line-height: 15px
+			color: #121560
+			text-decoration: underline
+			line-height: 50px
+			padding: 0 19px  
+			&:hover
+				text-decoration: none
+			&.is-active
+				color: #333
+				text-decoration: none
+				background-color: #DADFE4
+				
+.profile
+	+clr
+	padding: 20px 
+	&__photo
+		width: 200px
+		float: right
+		margin: 0 0 20px 20px
+		+r2
+			float: none
+			margin: 0 0 20px 
+	&__info
+		+reg
+		div
+			padding: 0 0 15px 
+			div
+				padding: 0 10px 
+				p
+					margin-bottom: 5px
+				li
+					p
+						margin: 0
+		span
+			font-size: 13px
+			color: #666 
+			display: block
+		p, li
+			font-size: 15px
+			line-height: 22px 
+			small
+				display: block
+				font-size: 13px
+				line-height: 18px
+		p
+			margin: 0
+		ul
+			padding: 0 0 0 18px 
+		li
+			list-style-type: decimal
+			font-size: 13px
+			padding: 9px 0 11px 
+			small
+				margin-bottom: 5px
+
+.js-tabs-block
+	display: none
+	&.is-active
+		display: block
+		
+.report-region
+	float: left
+	padding: 10px 0
+
+.regions
+	&__heading
+		padding: 25px 15px 20px
+		border-bottom: 3px solid #c7cfd6 
+	&__list
+		li
+			padding: 12px 15px
+			border-bottom: 1px solid #c7cfd6 
+		a
+			color: #121560
+			+reg
+			font-size: 13px
+			line-height: 15px 
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+	.user-table
+		margin: 20px 0  
+	&__table
+		width: 700px
+		th, td
+			padding: 10px 18px 
+			text-align: left
+			font-weight: normal
+			vertical-align: bottom
+			font-size: 13px
+			line-height: 15px
+			+reg
+			&.is-name
+				border-right: 1px solid #c7cfd6
+				width: 270px 
+		th
+			border-bottom: 3px solid #c7cfd6 
+			padding: 18px 
+		td
+			border-bottom: 1px solid #c7cfd6 
+			padding: 12px 18px
+		a
+			color: #121560
+			text-decoration: underline
+			&:hover
+				text-decoration: none

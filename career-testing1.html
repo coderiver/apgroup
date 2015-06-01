@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<link rel="stylesheet" media="all" href="css/font-awesome.min.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- begin header  -->
+	<header class="header">
+		<div class="header__top">
+			<div class="inner">
+				<a href="#" class="logo-small">
+					<img src="img/logo.png" alt="">
+					<span>testing report</span>
+				</a>
+				<div class="back">
+					<a href="#">Back to website</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+
+	<!-- begin main  -->
+	<main class="main">
+		<div class="inner">
+			<aside class="sidebar">
+				<ul class="sidebar__links">
+					<li><a href="#" class="is-active">Результати тестування</a></li>
+					<li><a href="#">Звіт по областям</a></li>
+				</ul>
+			</aside>
+			<div class="container">
+				
+				<!-- begin content  -->
+				<div class="content">
+					<div class="content__filter">
+						<div class="is-left">
+							<h4>Груповий звіт</h4>
+							<div class="t-select js-select">
+								<span class="t-select__text js-select-text">за період</span>
+								<ul class="t-select__list js-select-list">
+									<li data-val="за період">за період</li>
+									<li data-val="за день">за день</li>
+								</ul>
+								<select>
+									<option value="за період" selected>за період</option>
+									<option value="за день">за день</option>
+								</select>
+							</div>
+						</div>
+						<div class="is-right">
+							<label class="content__date">
+								<span class="label">Починаючи з:</span>
+								<input type="text" class="t-input" value="01.06.2015">
+								<i class="fa fa-calendar"></i>
+							</label>
+							<label class="content__date">
+								<span class="label">По:</span>
+								<input type="text" class="t-input" value="01.09.2015">
+								<i class="fa fa-calendar"></i>
+							</label>
+						</div>
+					</div>
+					<div class="content__inner">
+						<div class="content__table">
+							<div class="report">							
+								<div class="report__heading">
+									<div class="report__number"><span>№</span></div>
+									<div class="report__name"><span>ПІБ</span></div>
+									<div class="report__cols">
+										<div class="report__col"><span>Економічний  блок, %</span></div>
+										<div class="report__col"><span>Агрономічний блок, %</span></div>
+										<div class="report__col"><span>Юридичний блок, % </span></div>
+										<div class="report__col"><span>Інженерний блок, %</span></div>
+										<div class="report__col"><span>Управлінський блок, % </span></div>
+										<div class="report__col"><span><b>Середній бал, %</b></span></div>
+									</div>								
+								</div>
+								<table class="table">
+									<tr>
+										<td class="table__number">0001</td>
+										<td class="table__name"><a href="#">Артем'єв Владислав Вікторович</a></td>
+										<td class="table__col">70</td>
+										<td class="table__col">60</td>
+										<td class="table__col">50</td>
+										<td class="table__col">70</td>
+										<td class="table__col">50</td>
+										<td class="table__col is-last">60</td>
+									</tr>
+									<tr>
+										<td class="table__number">0002</td>
+										<td class="table__name"><a href="#">Балашов Герасим Григорович</a></td>
+										<td class="table__col">70</td>
+										<td class="table__col">60</td>
+										<td class="table__col">50</td>
+										<td class="table__col">70</td>
+										<td class="table__col">50</td>
+										<td class="table__col is-last">60</td>
+									</tr>
+									<tr>
+										<td class="table__number">0003</td>
+										<td class="table__name"><a href="#">Афанасьєв Спиридон Юрійович</a></td>
+										<td class="table__col">70</td>
+										<td class="table__col">60</td>
+										<td class="table__col">50</td>
+										<td class="table__col">70</td>
+										<td class="table__col">50</td>
+										<td class="table__col is-last">60</td>
+									</tr>
+									<tr>
+										<td class="table__number">0004</td>
+										<td class="table__name"><a href="#">Чесноков Назар Андрійович</a></td>
+										<td class="table__col">70</td>
+										<td class="table__col">60</td>
+										<td class="table__col">50</td>
+										<td class="table__col">70</td>
+										<td class="table__col">50</td>
+										<td class="table__col is-last">60</td>
+									</tr>
+									<tr>
+										<td class="table__number">0005</td>
+										<td class="table__name"><a href="#">Муравйов Герман Ростиславович</a></td>
+										<td class="table__col">70</td>
+										<td class="table__col">60</td>
+										<td class="table__col">50</td>
+										<td class="table__col">70</td>
+										<td class="table__col">50</td>
+										<td class="table__col is-last">60</td>
+									</tr>
+									<tr>
+										<td class="table__number">0006</td>
+										<td class="table__name"><a href="#">Успенський Святослав Вікторович</a></td>
+										<td class="table__col">70</td>
+										<td class="table__col">60</td>
+										<td class="table__col">50</td>
+										<td class="table__col">70</td>
+										<td class="table__col">50</td>
+										<td class="table__col is-last">60</td>
+									</tr>
+									<tr>
+										<td class="table__number">0007</td>
+										<td class="table__name"><a href="#">Агапов Савелій Григорович</a></td>
+										<td class="table__col">70</td>
+										<td class="table__col">60</td>
+										<td class="table__col">50</td>
+										<td class="table__col">70</td>
+										<td class="table__col">50</td>
+										<td class="table__col is-last">60</td>
+									</tr>
+									<tr>
+										<td class="table__number">0008</td>
+										<td class="table__name"><a href="#">Капустін Владислав Юрійович</a></td>
+										<td class="table__col">70</td>
+										<td class="table__col">60</td>
+										<td class="table__col">50</td>
+										<td class="table__col">70</td>
+										<td class="table__col">50</td>
+										<td class="table__col is-last">60</td>
+									</tr>
+									<tr>
+										<td class="table__number">0009</td>
+										<td class="table__name"><a href="#">Галкін Герман Андрійович</a></td>
+										<td class="table__col">70</td>
+										<td class="table__col">60</td>
+										<td class="table__col">50</td>
+										<td class="table__col">70</td>
+										<td class="table__col">50</td>
+										<td class="table__col is-last">60</td>
+									</tr>
+									<tr>
+										<td class="table__number">0019</td>
+										<td class="table__name"><a href="#">Лебедєв Фадей Ростиславович</a></td>
+										<td class="table__col">70</td>
+										<td class="table__col">60</td>
+										<td class="table__col">50</td>
+										<td class="table__col">70</td>
+										<td class="table__col">50</td>
+										<td class="table__col is-last">60</td>
+									</tr>
+								</table>
+								<div class="content__bottom">
+									<p>Відображено <b>10</b> із <b>158</b></p>
+									<ul class="content__pages">
+										<li><a href="#" class="is-active">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#" class="is-dots">...</a></li>
+										<li><a href="#">16</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<!-- end content -->
+
+			</div>
+		</div>
+	</main>
+	<!-- end main -->
+	
+</div>
+<!-- END out-->
+
+<!-- begin footer  -->
+<footer class="footer">
+	<div class="footer__bg">			
+		<div class="inner">
+			<div class="footer__nav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Career</a></li>
+					<li><a href="#">Contacts</a></li>
+				</ul>
+			</div>
+			<div class="footer__copy">
+				<p>© 2014 AgroProsperis, Inc. All Rights Reserved.</p>
+				<span>developed by GoInteractive</span>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- end footer -->
+
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>
