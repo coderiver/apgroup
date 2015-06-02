@@ -242,6 +242,9 @@ p { font-family: "NotoSerif Regular", Arial, sans-serif; font-size: 15px; line-h
 .sidebar__links a.is-active { text-decoration: none; color: #333333; }
 .sidebar__links a:before { position: absolute; top: 50%; left: 0; margin-top: -3px; width: 0px; height: 0px; border-style: solid; border-width: 0 0 7px 7px; border-color: transparent transparent #8dc63f transparent; content: ""; }
 
+.container { *zoom: 1; }
+.container:after { content: " "; display: table; clear: both; }
+
 .content { float: left; }
 .content__inner { overflow: auto; background: white; width: 100%; clear: both; }
 .content__table { width: 700px; }
