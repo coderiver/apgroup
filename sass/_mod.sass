@@ -234,30 +234,37 @@
 	+clr
 	display: inline-block
 	font-size: 0
-	padding: 5px 3px 
-	span
-		+reg
-		font-size: 13px
-		color: #000
-		display: block
-		overflow: hidden
-	input
-		margin: 3px 5px 0
-		float: left
-.checkbox-wrap
-	+clr
-	display: inline-block
-	font-size: 0
-	padding: 5px 3px 
+	padding: 5px 3px 5px 23px
 	position: relative
 	span
 		+reg
 		font-size: 13px
 		color: #000
 		display: block
-		overflow: hidden
+		// overflow: hidden
 	input
-		float: left
+		margin: 3px 5px 0
+		// float: left
+		position: absolute
+		top: 4px
+		left: 0
+.checkbox-wrap
+	+clr
+	display: inline-block
+	font-size: 0
+	padding: 5px 3px 5px 23px
+	position: relative
+	span
+		+reg
+		font-size: 13px
+		color: #000
+		display: block
+		// overflow: hidden
+	input
+		// float: left		
+		position: absolute
+		top: 4px
+		left: 0
 		margin: 3px 5px 0
 .file
 	+reg

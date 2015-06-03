@@ -94,8 +94,8 @@ p { font-family: "NotoSerif Regular", Arial, sans-serif; font-size: 15px; line-h
 
 .menu { font-size: 0; border-bottom: 3px solid #8dc63f; overflow: hidden; padding: 48px 0 5px; }
 @media only screen and (max-width: 980px) { .menu { clear: both; padding: 20px 0 5px; } }
-.menu ul { text-align: justify; }
-@media only screen and (max-width: 980px) { .menu ul { text-align: center; } }
+.menu ul { text-align: justify; font-size: 0.1px; }
+@media only screen and (max-width: 980px) { .menu ul { text-align: center; font-size: 0; } }
 .menu ul:after { content: ""; display: inline-block; width: 100%; }
 .menu li { display: inline-block; vertical-align: top; text-align: left; padding: 0 0 5px; }
 @media only screen and (max-width: 980px) { .menu li { padding: 0 10px 5px; } }
@@ -414,15 +414,15 @@ p { font-family: "NotoSerif Regular", Arial, sans-serif; font-size: 15px; line-h
 
 .input { height: 45px; }
 
-.radio-wrap { *zoom: 1; display: inline-block; font-size: 0; padding: 5px 3px; }
+.radio-wrap { *zoom: 1; display: inline-block; font-size: 0; padding: 5px 3px 5px 23px; position: relative; }
 .radio-wrap:after { content: " "; display: table; clear: both; }
-.radio-wrap span { font-family: "NotoSerif Regular", Arial, sans-serif; font-size: 13px; color: black; display: block; overflow: hidden; }
-.radio-wrap input { margin: 3px 5px 0; float: left; }
+.radio-wrap span { font-family: "NotoSerif Regular", Arial, sans-serif; font-size: 13px; color: black; display: block; }
+.radio-wrap input { margin: 3px 5px 0; position: absolute; top: 4px; left: 0; }
 
-.checkbox-wrap { *zoom: 1; display: inline-block; font-size: 0; padding: 5px 3px; position: relative; }
+.checkbox-wrap { *zoom: 1; display: inline-block; font-size: 0; padding: 5px 3px 5px 23px; position: relative; }
 .checkbox-wrap:after { content: " "; display: table; clear: both; }
-.checkbox-wrap span { font-family: "NotoSerif Regular", Arial, sans-serif; font-size: 13px; color: black; display: block; overflow: hidden; }
-.checkbox-wrap input { float: left; margin: 3px 5px 0; }
+.checkbox-wrap span { font-family: "NotoSerif Regular", Arial, sans-serif; font-size: 13px; color: black; display: block; }
+.checkbox-wrap input { position: absolute; top: 4px; left: 0; margin: 3px 5px 0; }
 
 .file { font-family: "NotoSerif Regular", Arial, sans-serif; font-size: 13px; color: #666666; line-height: 17px; }
 .file.error { color: red; }
