@@ -199,7 +199,7 @@ p { font-family: "NotoSerif Regular", Arial, sans-serif; font-size: 15px; line-h
 .test__list li { list-style-type: decimal; padding: 27px 0 0 0; font-family: "NotoSerif Bold", Arial, sans-serif; font-size: 15px; line-height: 1.5; }
 .test__list li b { display: block; }
 .test__list li div { font-size: 0; padding: 7px 0 0; }
-.test__list li .checkbox-wrap { padding: 3px 0; }
+.test__list li .checkbox-wrap { padding: 3px 0 3px 23px; }
 .test__list li .checkbox-wrap input { margin: 3px 5px 3px 0; }
 
 .add { padding: 10px 27px 5px; }
