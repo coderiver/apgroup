@@ -132,17 +132,17 @@ head.ready(function() {
 	});
 	//region
 	$('.js-region').each(function() {
-		$('.js-region').on('change', function() {
-			if ($('.js-region-radio:checked').length > 0) {
-				$(this).find('.js-region-box').addClass('is-active');
+		$(this).find('.radio').on('change', function() {
+			if ($('.radio').is(':checked')) {
+				$('.js-region-box').removeClass('is-active');
+				$(this).parents('.js-region-block').find('.js-region-box').addClass('is-active');
 			}
 			else {
-				$(this).find('.js-region-box').removeClass('is-active');
+				$(this).parents('.js-region-block').find('.js-region-box').removeClass('is-active');
 			}
 		});
 		
 	});
-
 	//graph
 	$('.js-graph-line').each(function() {
 		$(this).width($(this).parents('.js-graph').find('.is-percent').text() + '%');
